@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='color.css') }}">
+</head>
+<body>
+    <table>
+        {% for i in range (row): %}
+        <tr>
+            {% for j in range (column): %} 
+                <td style="background-color: {{ color1 if (i+j)%2==0 else color2 }}"></td> 
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

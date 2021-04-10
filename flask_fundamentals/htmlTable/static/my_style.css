@@ -1,0 +1,26 @@
+h2{
+    text-align: justify;
+    color:rebeccapurple;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th :scope{
+    font-weight: bold;    
+}
+
+.table thead{
+    width: fit-content;    
+}
+
+.table tbody {
+    width: fit-content;
+    font-weight:unset;    
+}
+
+th, td{
+    padding: 15px;
+}
+
